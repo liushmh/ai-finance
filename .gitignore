@@ -1,0 +1,6 @@
+tools/data
+tools/__pycache__
+tools/myenv
+tools/.DS_Store
+
+service_account.json
