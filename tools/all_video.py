@@ -101,7 +101,7 @@ def create_video_segment_with_text(ssml_text, image_name, index):
     video_path = os.path.join(output_folder, f"video_{index}.mp4")
     
     # Generate audio from SSML
-    # text_to_audio(ssml_text, audio_path)
+    text_to_audio(ssml_text, audio_path)
     
     # Check if the audio file was created successfully before proceeding
      # Check if the audio file was created successfully before proceeding
@@ -117,12 +117,15 @@ def create_video_segment_with_text(ssml_text, image_name, index):
 
         # Create text clips based on parsed SSML timing information
         text_clips = [
-            TextClip(txt, fontsize=30, color='white', font=chinese_font_path, bg_color='black')
-            .set_position(("center", "bottom"))  # Adjust the subtitle position slightly higher
+            TextClip(txt, fontsize=30, color='white', font=chinese_font_path, bg_color='#42423F', 
+             stroke_color='white', stroke_width=0.5)
+            .set_position(("center", 640))  # Moves text slightly above the bottom of the screen
+            # .margin(bottom=50)
             .set_start(start_time)           # Set the start time for each text segment
             .set_duration(duration)          # Use calculated duration to keep text visible
             for txt, start_time, duration in text_segments
         ]
+
         
         # Combine the image and text clips
         video_clip = CompositeVideoClip([image_clip] + text_clips)
