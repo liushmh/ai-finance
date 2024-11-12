@@ -6,3 +6,4 @@ tools/myenv
 tools/.DS_Store
 
 service_account.json
+*.csv

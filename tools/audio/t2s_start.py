@@ -15,57 +15,19 @@ speech_config.speech_synthesis_voice_name = "zh-CN-YunxiNeural"  # Example voice
 ssml_text = """
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="zh-CN">
     <voice name="zh-CN-YunxiNeural">
+        欢迎来到中速财经，<break time="300ms"/>我们不仅致力于提供市场龙头的专业分析，<break time="300ms"/>更希望与您一起把握趋势，共同迈向财富增值的未来。<break time="500ms"/>
+        在这里，<break time="300ms"/>您将获得关于美股和加密货币市场的最新动态和深度见解，<break time="300ms"/>助您在每一次投资决策中更加自信和从容。<break time="500ms"/>
+
+        美股方面，<break time="300ms"/>我们紧跟市场领军企业的最新发展，<break time="300ms"/>为您剖析公司动向和行业趋势，<break time="300ms"/>帮助您识别价值所在。<break time="500ms"/>
         
-        <mstts:express-as style="cheerful">
-            标普500指数和纳斯达克综合指数在周四上涨，延续了特朗普当选后的华尔街反弹，两大指数均创下历史新高！
-        </mstts:express-as>
-        <break time="200ms"/>
-        标普500指数上涨<prosody pitch="+1st">0.74%</prosody>，收于5,973.09点。
-        <break time="200ms"/>
+        在迅速发展的加密货币领域，<break time="300ms"/>我们关注主要数字资产的价格走势和市场情绪变化，<break time="300ms"/>陪伴您在每次波动中找到投资良机。<break time="500ms"/>
 
-        <mstts:express-as style="cheerful">
-            纳斯达克指数上涨1.54%，达到21,101.57点，这是该指数首次收于21,000点以上！投资者对这一成就感到非常乐观。
-        </mstts:express-as>
-        <break time="300ms"/>
+        此外，中速财经还定期带来热点话题的深度解析，<break time="300ms"/>涵盖宏观经济、行业政策及未来科技的最新动态，<break time="300ms"/>为您提供更加全面的投资视角。<break time="500ms"/>
 
-        投资者对特朗普第二任期的政策反应积极，预计将有利于股票等风险资产，部分原因是他提出的<emphasis level="strong">减税计划</emphasis>。
-        <break time="200ms"/>
-        
-        <mstts:express-as style="sad">
-            然而，持续的政府赤字和更高的关税可能引发对通胀反弹的担忧，导致市场波动性增加。
-        </mstts:express-as>
-        <break time="300ms"/>
-
-        美联储宣布降息<prosody rate="fast" pitch="-1st">25个基点</prosody>，这是市场普遍预期的，但降幅小于9月份的50个基点。
-        <break time="200ms"/>
-        
-        <mstts:express-as style="cheerful">
-            美联储主席鲍威尔表示对经济状况感到“良好”，央行似乎将继续坚持小幅度的调整策略。
-        </mstts:express-as>
-        <break time="300ms"/>
-
-        <mstts:express-as style="empathetic">
-            在美联储自特朗普当选以来首次降息后，加密货币价格与会议前基本持平。社交媒体评论者认为，联邦公开市场委员会的决策对数字资产价格的影响可能会越来越小。
-        </mstts:express-as>
-        <break time="200ms"/>
-
-        美联储主席杰罗姆·鲍威尔表示，央行不会因短期通胀数据或选举结果而改变策略。
-        <break time="300ms"/>
-        
-        他强调，删除关于“对通胀更有信心”的措辞只是<emphasis level="moderate">说法上的调整</emphasis>，并非政策方向的改变。
-        <break time="200ms"/>
-
-        <mstts:express-as style="sad">
-            特朗普和鲍威尔在利率政策上一直存在分歧。尽管特朗普在2017年任命了鲍威尔，但他曾批评鲍威尔采取保守的利率政策，声称这减缓了美国的经济增长。
-        </mstts:express-as>
-        <break time="200ms"/>
-
-        <mstts:express-as style="empathetic">
-            有传言称，一旦特朗普在一月份就任，鲍威尔可能会辞职。但鲍威尔在新闻发布会上表示，即使被特朗普要求辞职，他也不会下台。
-        </mstts:express-as>
-        <break time="200ms"/>
+        我们相信，智慧与洞见可以成就财富增长。<break time="300ms"/>中速财经希望成为您可靠的伙伴，<break time="300ms"/>与您携手迈向机遇的未来。<break time="500ms"/>
     </voice>
 </speak>
+
 """
 
 # Function to convert SSML to speech and save as audio file
